@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise and Sunset Times</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js"></script>
+</head>
+<style>
+   body
+    {
+      
+      background-image: url('sun.jpg');
+      opacity: 100;
+    
+   }
+</style>
+<body>
+   
+    <header>
+        <h1>FIND OUT THE SUNRISE & SUNSET FOR A LOCATION</h1>
+    </header>
+
+
+
+    
+
+
+
+    <main>
+        
+            
+            <button class = "button1" onclick="getSunriseSunset()">Get Sunrise Sunset</button>
+            <button onclick="getCurrentLocation()">Get weather for current location</button>
+        
+        <div>
+            <label for="locationQuery">Search Location:</label>
+            <input type="text" id="locationQuery" placeholder="Enter location">
+            <button onclick="searchLocation()">Search</button>
+          </div>
+          <div id="result"></div>
+      
+    </main>
+
+    <footer>
+        <p>Powered by SunriseSunset.io</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
